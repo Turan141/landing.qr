@@ -1,6 +1,6 @@
 const Hero = () => {
 	return (
-		<section className='relative min-h-screen flex items-center justify-center overflow-hidden'>
+		<section className='relative min-h-screen flex flex-col justify-center overflow-hidden py-24'>
 			{/* Background Image with Overlay */}
 			<div
 				className='absolute inset-0 bg-cover bg-center bg-no-repeat z-0 transform scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]'
@@ -13,7 +13,7 @@ const Hero = () => {
 				<div className='absolute inset-0 bg-black/50 bg-gradient-to-b from-black/80 via-black/20 to-black/80'></div>
 			</div>
 
-			<div className='container mx-auto px-4 md:px-6 relative z-10 text-center pt-32'>
+			<div className='container mx-auto px-4 md:px-6 relative z-10 text-center mt-12 md:mt-20'>
 				<div className='inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8 hover:bg-white/20 transition-colors cursor-pointer'>
 					<span className='w-2 h-2 rounded-full bg-green-400 animate-pulse'></span>
 					<span className='text-xs md:text-sm font-medium text-white/90'>
@@ -60,20 +60,20 @@ const Hero = () => {
 				</div>
 
 				{/* Floating trusted by */}
-				<div className='mt-20 pt-10 border-t border-white/10 max-w-4xl mx-auto'>
+				<div className='mt-16 md:mt-24 pt-8 md:pt-10 border-t border-white/10 max-w-4xl mx-auto'>
 					<p className='text-xs font-semibold tracking-widest text-white/40 uppercase mb-6'>
 						Нам доверяют современные компании
 					</p>
-					<div className='flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-700'>
+					<div className='flex flex-wrap justify-center gap-6 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-700'>
 						{/* Fake logos using text for demo purposes replacing with polished SVGs later if needed */}
-						<div className='text-xl font-bold text-white flex items-center gap-2'>
-							<div className='w-6 h-6 rounded-full bg-white/20' /> Acme Corp
+						<div className='text-lg md:text-xl font-bold text-white flex items-center gap-2'>
+							<div className='w-5 h-5 md:w-6 md:h-6 rounded-full bg-white/20' /> Acme Corp
 						</div>
-						<div className='text-xl font-bold text-white flex items-center gap-2'>
-							<div className='w-6 h-6 bg-white/20 rotate-45' /> Globex
+						<div className='text-lg md:text-xl font-bold text-white flex items-center gap-2'>
+							<div className='w-5 h-5 md:w-6 md:h-6 bg-white/20 rotate-45' /> Globex
 						</div>
-						<div className='text-xl font-bold text-white flex items-center gap-2'>
-							<div className='w-6 h-6 rounded-sm bg-white/20' /> Soylent
+						<div className='text-lg md:text-xl font-bold text-white flex items-center gap-2'>
+							<div className='w-5 h-5 md:w-6 md:h-6 rounded-sm bg-white/20' /> Soylent
 						</div>
 					</div>
 				</div>
