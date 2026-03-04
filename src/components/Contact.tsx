@@ -9,10 +9,7 @@ const ContactInfo = ({ label, value }: { label: string; value: string }) => (
 
 const Contact = () => {
 	return (
-		<section
-			id='contact'
-			className='bg-[#F9FAFB] relative overflow-hidden'
-		>
+		<section id='contact' className='bg-[#F9FAFB] relative overflow-hidden'>
 			<div className='container mx-auto px-4 md:px-32 relative z-10 '>
 				<div className='flex flex-col lg:flex-row gap-12 lg:gap-24 items-center'>
 					{/* Left Column: Text Info */}
