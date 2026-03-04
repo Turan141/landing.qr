@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className='min-h-screen bg-white'>
 			<Header />
-			<main className='flex flex-col gap-24 md:gap-32 lg:gap-40'>
+			<main>
 				<Hero />
 				<Features />
 				<HowTo />

@@ -10,8 +10,8 @@ const FeatureCard = ({
 	description: string
 }) => {
 	return (
-		<div className='bg-[#111] p-8 rounded-3xl  h-full min-h-[320px] flex flex-col justify-end transition-transform hover:scale-[1.02] duration-300 group'>
-			<div className='w-12 h-12 bg-white/10 text-white rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition-colors backdrop-blur-sm'>
+		<div className='bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] border border-white/5 p-8 rounded-3xl h-full min-h-[320px] flex flex-col justify-end transition-all hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] hover:border-white/10 duration-500 group'>
+			<div className='w-12 h-12 bg-white/5 text-white rounded-full flex items-center justify-center mb-6 group-hover:bg-white/10 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all backdrop-blur-sm'>
 				{icon}
 			</div>
 			<h3 className='text-xl font-bold mb-3 text-white'>{title}</h3>
@@ -22,10 +22,10 @@ const FeatureCard = ({
 
 const Features = () => {
 	return (
-		<section id='about' className='bg-white'>
+		<section id='about' className='py-24 lg:py-40 bg-white'>
 			<div className='container mx-auto px-4 md:px-32'>
 				<div className='max-w-3xl mb-16 md:text-left'>
-					<h2 className='text-4xl md:text-6xl font-bold mb-6 tracking-tight text-gray-900 leading-tight'>
+					<h2 className='text-4xl md:text-6xl font-bold mb-6 tracking-tight text-gray-900 leading-tight text-balance'>
 						Всё, что нужно для <br className='hidden md:block' />
 						приёма платежей
 					</h2>
@@ -36,10 +36,10 @@ const Features = () => {
 
 					<a
 						href='#'
-						className='inline-flex items-center text-gray-900 font-medium hover:text-blue-600 transition-colors border-b border-gray-300 hover:border-blue-600 pb-0.5'
+						className='group inline-flex items-center text-gray-900 font-medium hover:text-blue-600 transition-colors border-b border-gray-300 hover:border-blue-600 pb-0.5'
 					>
 						Узнать больше
-						<ArrowRight className='w-4 h-4 ml-2' />
+						<ArrowRight className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1' />
 					</a>
 				</div>
 
