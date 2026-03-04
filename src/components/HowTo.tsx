@@ -27,7 +27,9 @@ const StepCard = ({
 
 const StatCard = ({ value, label }: { value: string; label: string }) => (
 	<div className='bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] border border-white/5 p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square transition-all hover:scale-105 hover:shadow-[0_15px_30px_-10px_rgba(0,0,0,0.5)] hover:border-white/10 duration-500'>
-		<span className='text-4xl md:text-5xl font-bold text-white mb-2 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent'>{value}</span>
+		<span className='text-4xl md:text-5xl font-bold text-white mb-2 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent'>
+			{value}
+		</span>
 		<span className='text-gray-400 text-sm font-medium'>{label}</span>
 	</div>
 )
@@ -50,7 +52,7 @@ const HowTo = () => {
 							className='group inline-flex items-center text-gray-900 font-medium hover:text-blue-600 transition-colors border-b border-gray-900 hover:border-blue-600 pb-0.5'
 						>
 							Начать сейчас
-                            <ArrowRight className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1' />
+							<ArrowRight className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1' />
 						</a>
 					</div>
 

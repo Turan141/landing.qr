@@ -9,11 +9,14 @@ const ContactInfo = ({ label, value }: { label: string; value: string }) => (
 
 const Contact = () => {
 	return (
-		<section id='contact' className='py-24 lg:py-40 bg-[#F9FAFB] relative overflow-hidden bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]'>
+		<section
+			id='contact'
+			className='py-24 lg:py-40 bg-[#F9FAFB] relative overflow-hidden bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]'
+		>
 			{/* Decorative background blob */}
-            <div className='absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-100/50 rounded-full blur-3xl opacity-50 pointer-events-none'></div>
+			<div className='absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-100/50 rounded-full blur-3xl opacity-50 pointer-events-none'></div>
 
-            <div className='container mx-auto px-4 md:px-32 relative z-10 px-4 md:px-32'>
+			<div className='container mx-auto px-4 md:px-32 relative z-10 px-4 md:px-32'>
 				<div className='flex flex-col lg:flex-row gap-12 lg:gap-24 items-center'>
 					{/* Left Column: Text Info */}
 					<div className='lg:w-1/2'>
@@ -33,20 +36,22 @@ const Contact = () => {
 
 					{/* Right Column: Chat Interface */}
 					<div className='w-full lg:w-1/2 max-w-md ml-auto relative group'>
-                        {/* Soft glow behind the chat */}
-                        <div className='absolute -inset-1 bg-gradient-to-r from-blue-100 to-purple-100 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200'></div>
-						
-                        <div className='bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl shadow-gray-200/50 border border-white p-2 overflow-hidden h-[400px] flex flex-col relative'>
+						{/* Soft glow behind the chat */}
+						<div className='absolute -inset-1 bg-gradient-to-r from-blue-100 to-purple-100 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200'></div>
+
+						<div className='bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl shadow-gray-200/50 border border-white p-2 overflow-hidden h-[400px] flex flex-col relative'>
 							{/* Chat Header */}
-                            <div className='px-6 py-4 border-b border-gray-100/50 flex items-center justify-between bg-white/50'>
-                                <div className='flex items-center gap-3'>
-                                    <div className='relative flex h-3 w-3'>
-                                      <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75'></span>
-                                      <span className='relative inline-flex rounded-full h-3 w-3 bg-green-500'></span>
-                                    </div>
-                                    <span className='text-sm font-medium text-gray-700'>AI-ассистент онлайн</span>
-                                </div>
-                            </div>
+							<div className='px-6 py-4 border-b border-gray-100/50 flex items-center justify-between bg-white/50'>
+								<div className='flex items-center gap-3'>
+									<div className='relative flex h-3 w-3'>
+										<span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75'></span>
+										<span className='relative inline-flex rounded-full h-3 w-3 bg-green-500'></span>
+									</div>
+									<span className='text-sm font-medium text-gray-700'>
+										AI-ассистент онлайн
+									</span>
+								</div>
+							</div>
 
 							<div className='flex-1 p-6 space-y-6 overflow-y-auto'>
 								{/* Bot Message */}

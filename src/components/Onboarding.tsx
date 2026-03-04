@@ -25,7 +25,7 @@ const Onboarding = () => {
 						className='group inline-flex items-center text-gray-900 font-medium hover:text-blue-600 transition-colors border-b border-gray-900 hover:border-blue-600 pb-0.5'
 					>
 						Оставить заявку
-                        <ArrowRight className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1' />
+						<ArrowRight className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1' />
 					</a>
 				</div>
 
