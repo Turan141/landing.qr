@@ -22,7 +22,7 @@ const FeatureCard = ({
 
 const Features = () => {
 	return (
-		<section id='about' className='py-24 lg:py-40 bg-white'>
+		<section id='about' className='bg-white'>
 			<div className='container mx-auto px-4 md:px-32'>
 				<div className='max-w-3xl mb-16 md:text-left'>
 					<h2 className='text-4xl md:text-6xl font-bold mb-6 tracking-tight text-gray-900 leading-tight'>
