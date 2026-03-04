@@ -2,14 +2,15 @@ const Hero = () => {
 	return (
 		<section className='relative min-h-screen flex items-center justify-center overflow-hidden'>
 			{/* Background Image with Overlay */}
-			<div 
-				className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-				style={{ 
-					backgroundImage: "url('https://qr-easy-pay.lovable.app/assets/qr-terminal-B7LBFqwk.jpg')",
+			<div
+				className='absolute inset-0 bg-cover bg-center bg-no-repeat z-0'
+				style={{
+					backgroundImage:
+						"url('https://qr-easy-pay.lovable.app/assets/qr-terminal-B7LBFqwk.jpg')"
 				}}
 			>
-                {/* Dark Overlay gradient */}
-				<div className="absolute inset-0 bg-black/40 bg-gradient-to-b from-black/60 via-black/20 to-black/60"></div>
+				{/* Dark Overlay gradient */}
+				<div className='absolute inset-0 bg-black/40 bg-gradient-to-b from-black/60 via-black/20 to-black/60'></div>
 			</div>
 
 			<div className='container mx-auto px-4 md:px-6 relative z-10 text-center pt-20'>

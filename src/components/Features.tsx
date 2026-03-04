@@ -22,14 +22,14 @@ const FeatureCard = ({
 
 const Features = () => {
 	return (
-		<section id='about' className='py-20 lg:py-32 bg-white'>
-			<div className='container mx-auto px-4 md:px-6'>
-				<div className='max-w-3xl mb-16'>
+		<section id='about' className='py-24 lg:py-40 bg-white'>
+			<div className='container mx-auto px-4 md:px-32'>
+				<div className='max-w-3xl mb-16 md:text-left'>
 					<h2 className='text-4xl md:text-6xl font-bold mb-6 tracking-tight text-gray-900 leading-tight'>
 						Всё, что нужно для <br className='hidden md:block' />
 						приёма платежей
 					</h2>
-					<p className='text-lg text-gray-500 max-w-xl mb-6'>
+					<p className='text-lg text-gray-500 max-w-xl mb-6 mx-auto md:mx-0'>
 						QRPay заменяет POS-терминал. Торговец вводит сумму — покупатель сканирует и
 						платит.
 					</p>
@@ -43,7 +43,7 @@ const Features = () => {
 					</a>
 				</div>
 
-				<div className='grid grid-cols-1 md:grid-cols-2 gap-6 '>
+				<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 					<FeatureCard
 						icon={<Smartphone className='w-5 h-5' />}
 						title='Без оборудования'

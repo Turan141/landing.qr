@@ -11,9 +11,9 @@ const Contact = () => {
 	return (
 		<section
 			id='contact'
-			className='py-20 lg:py-32 bg-[#F9FAFB] relative overflow-hidden'
+			className='py-24 lg:py-40 bg-[#F9FAFB] relative overflow-hidden'
 		>
-			<div className='container mx-auto px-4 md:px-6 relative z-10'>
+			<div className='container mx-auto px-4 md:px-32 relative z-10 '>
 				<div className='flex flex-col lg:flex-row gap-12 lg:gap-24 items-center'>
 					{/* Left Column: Text Info */}
 					<div className='lg:w-1/2'>
