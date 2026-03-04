@@ -1,11 +1,12 @@
 import { CreditCard, Zap, Shield, Smartphone, ArrowRight } from "lucide-react"
+import type { JSX } from "react"
 
 const FeatureCard = ({
 	icon,
 	title,
 	description
 }: {
-	icon: any
+	icon: JSX.Element
 	title: string
 	description: string
 }) => {
