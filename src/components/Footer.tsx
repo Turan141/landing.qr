@@ -24,7 +24,7 @@ const Footer = () => {
 	return (
 		<footer className='bg-[#0A0A0A] text-white overflow-hidden'>
 			{/* CTA Section */}
-			<div className='border-b border-white/10 px-4'>
+			<div className='border-b border-white/10 px-4 md:px-32'>
 				<div className='container mx-auto py-20 lg:py-24'>
 					<div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-8'>
 						<div className='max-w-xl'>
