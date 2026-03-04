@@ -24,8 +24,8 @@ const Footer = () => {
 	return (
 		<footer className='bg-[#0A0A0A] text-white overflow-hidden'>
 			{/* CTA Section */}
-			<div className='border-b border-white/10 px-4 md:px-26'>
-				<div className='container mx-auto px-4 md:px-6 py-20 lg:py-24'>
+			<div className='border-b border-white/10 px-4'>
+				<div className='container mx-auto py-20 lg:py-24'>
 					<div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-8'>
 						<div className='max-w-xl'>
 							<h2 className='text-3xl md:text-4xl font-bold text-white leading-tight'>
@@ -47,8 +47,8 @@ const Footer = () => {
 			</div>
 
 			{/* Links Section */}
-			<div className='container py-16 lg:py-20'>
-				<div className='grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-24 mb-20  mx-auto px-4 md:px-32'>
+			<div className='container py-16 lg:py-20 w-full max-w-full mx-auto'>
+				<div className='grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-24 mb-20 mx-auto px-4 md:px-32'>
 					{/* Logo Column */}
 					<div className='lg:col-span-2'>
 						<div className='flex items-center gap-3 mb-6'>

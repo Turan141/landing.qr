@@ -23,21 +23,31 @@ const FeatureCard = ({
 
 const Features = () => {
 	return (
-		<section id='about' className='py-24 lg:py-40 bg-white'>
-			<div className='container mx-auto px-4 md:px-32'>
+		<section id='about' className='py-24 lg:py-40 bg-white relative overflow-hidden'>
+			{/* Subtle background decoration */}
+			<div className='absolute top-0 right-0 -mr-64 -mt-64 w-[600px] h-[600px] bg-blue-50 rounded-full blur-[100px] opacity-60 pointer-events-none'></div>
+
+			<div className='container mx-auto px-4 md:px-32 relative z-10'>
 				<div className='max-w-3xl mb-16 md:text-left'>
-					<h2 className='text-4xl md:text-6xl font-bold mb-6 tracking-tight text-gray-900 leading-tight text-balance'>
+					<div className='inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-6'>
+						<span className='text-sm font-semibold text-blue-600 uppercase tracking-wider'>
+							Возможности
+						</span>
+					</div>
+					<h2 className='text-4xl md:text-6xl font-bold mb-6 tracking-tighter text-gray-900 leading-[1.1] text-balance'>
 						Всё, что нужно для <br className='hidden md:block' />
-						приёма платежей
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600'>
+							приёма платежей
+						</span>
 					</h2>
-					<p className='text-lg text-gray-500 max-w-xl mb-6 mx-auto md:mx-0'>
+					<p className='text-lg text-gray-500 max-w-xl mb-8 mx-auto md:mx-0 leading-relaxed font-medium'>
 						QRPay заменяет POS-терминал. Торговец вводит сумму — покупатель сканирует и
 						платит.
 					</p>
 
 					<a
 						href='#'
-						className='group inline-flex items-center text-gray-900 font-medium hover:text-blue-600 transition-colors border-b border-gray-300 hover:border-blue-600 pb-0.5'
+						className='group inline-flex items-center text-gray-900 font-bold hover:text-blue-600 transition-colors border-b-2 border-gray-200 hover:border-blue-600 pb-1'
 					>
 						Узнать больше
 						<ArrowRight className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1' />
